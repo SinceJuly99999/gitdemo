@@ -13,3 +13,8 @@ class Queue:#先定义队列
     
     def get_items(self):
         return self.items
+
+
+n=int(input())
+q=Queue()#创建空队列
+#把12345按顺序放入队列
