@@ -34,3 +34,7 @@ t=q.ask()
         q.enqueue(t*10+3)
         q.enqueue(t*10+4)
         q.dequeue()
+    if t%10==3:
+        q.enqueue(t*10+1)
+        q.enqueue(t*10+4)
+        q.dequeue()
