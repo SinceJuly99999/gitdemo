@@ -41,3 +41,11 @@ t=q.ask()
     if t%10==4:
         q.enqueue(t*10+5)
         q.dequeue()
+    if t%10==5:
+        q.enqueue(t*10+1)
+        q.enqueue(t*10+2)
+        q.enqueue(t*10+3)
+        q.enqueue(t*10+4)
+        q.enqueue(t*10+5)
+        q.dequeue()
+print(q.ask())
