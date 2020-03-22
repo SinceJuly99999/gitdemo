@@ -18,3 +18,11 @@ class Queue:#先定义队列
 n=int(input())
 q=Queue()#创建空队列
 #把12345按顺序放入队列
+q.enqueue(1)
+q.enqueue(2)
+q.enqueue(3)
+q.enqueue(4)
+q.enqueue(5)
+while q.ask()%n!=0:#不能整除就循环
+t=q.ask()
+#确定每个数的个位，然后按照题目意思进行操作
