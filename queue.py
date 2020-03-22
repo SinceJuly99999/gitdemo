@@ -30,3 +30,7 @@ t=q.ask()
         q.enqueue(t*10+3)
         q.enqueue(t*10+5)
         q.dequeue()
+    if t%10==2:
+        q.enqueue(t*10+3)
+        q.enqueue(t*10+4)
+        q.dequeue()
