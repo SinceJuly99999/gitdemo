@@ -26,3 +26,7 @@ q.enqueue(5)
 while q.ask()%n!=0:#不能整除就循环
 t=q.ask()
 #确定每个数的个位，然后按照题目意思进行操作
+    if t%10==1:
+        q.enqueue(t*10+3)
+        q.enqueue(t*10+5)
+        q.dequeue()
